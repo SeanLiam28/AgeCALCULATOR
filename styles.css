@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9e9ea;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/773/418/non_2x/gradient-calming-purple-tropical-background-free-vector.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.ageCalc {
+    margin-bottom: 10px;
+}
+
+.calc {
+    font-size: 100px;
+    color: white;
+}
+
+.container {
+    padding: 1px;
+    width: 330px;
+    border-radius: 7px;
+    background: white;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container .date-input {
+    padding: 20px;
+    width: 100%;
+    background: #947ceb;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.container .date-input div {
+    height: 70px;
+    width: 33%;
+    float: left;
+}
+
+.container .date-input div p {
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+
+.container .date-input div input {
+    all: unset;
+    height: 30px;
+    width: 75px;
+    background: white;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.container .submit-btn {
+    all: unset;
+    height: 35px;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container .result {
+    width: 94%;
+    height: 120px;
+    margin-left: 10px;
+    margin-top: 13px;
+    border-bottom: 1px solid grey;
+}
+
+.container .result > div {
+    height: 110px;
+    width: 33%;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.container .result > div > p {
+    color: grey;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.container .result > div > div {
+    height: 70px;
+    width: 70px;
+    background: #947ceb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.container .other-results {
+    margin-top: 13px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left; /* Align the text to the left */
+    overflow-x: auto;
+}
+
+.container .other-results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container .other-results table td {
+    padding: 4px;
+    word-wrap: break-word;
+}
+
+.container .other-results table td:nth-child(odd) {
+    font-size: 13px;
+}
+
+.container .other-results table td:nth-child(even) {
+    font-weight: 600;
+    font-size: 13px;
+    text-align: right;
+}
+
+::selection {
+    background: rgb(100, 149, 237, 0.8);
+    color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+    .calc {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .calc {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .calc {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .ageCalc {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .calc {
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+    .ageCalc {
+        margin-bottom: 15px;
+    }
+
+    .container .date-input div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container .date-input div input {
+        width: 100%;
+    }
+
+    .container .result > div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container .result > div > div {
+        margin-left: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .container .other-results table td:nth-child(even) {
+        position: static;
+        text-align: right;
+    }
+}

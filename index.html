@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <div class="ageCalc">
+        <h1 class="calc">Age Calculator</h1>
+    </div>
+    
+    <div class="container">
+    
+        <div class="date-input">
+            <div class="date">
+                <p>Date</p>
+                <input type="number" class="date-input-field" value="1" min="1" max="31">
+            </div>
+            <div class="month">
+                <p>Month</p>
+                <input type="number" class="month-input-field" value="1" min="1" max="12">
+            </div>
+            <div class="year">
+                <p>Year</p>
+                <input type="number" class="year-input-field" value="2000" min="1900" max="2100">
+            </div>
+            <button class="submit-btn">Submit</button>
+        </div>
+        <div class="result">
+            <div class="result-years">
+                <div>00</div>
+                <p>Years</p>
+            </div>
+            <div class="result-months">
+                <div>00</div>
+                <p>Months</p>
+            </div>
+            <div class="result-days">
+                <div>00</div>
+                <p>Days</p>
+            </div>
+        </div>
+        <div class="other-results">
+            <table>
+                <tr>
+                    <td>Months old</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Weeks old</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Days old</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Hours old</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Minutes old</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Seconds old (approx)</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
